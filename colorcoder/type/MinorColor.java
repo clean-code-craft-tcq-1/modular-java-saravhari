@@ -1,6 +1,6 @@
 package colorcoder.type;
 
-public enum MinorColor implements IColor {
+public enum MinorColor {
 	BLUE(0), ORANGE(1), GREEN(2), BROWN(3), SLATE(4);
 
 	private int index;
@@ -9,7 +9,6 @@ public enum MinorColor implements IColor {
 		this.index = index;
 	}
 
-	@Override
 	public int getIndex() {
 		return index;
 	}

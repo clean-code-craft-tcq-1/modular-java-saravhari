@@ -1,7 +1,6 @@
 package colorcoder.pair;
 
 import colorcoder.names.ColorName;
-import colorcoder.type.IColor;
 import colorcoder.type.MajorColor;
 import colorcoder.type.MinorColor;
 
@@ -42,13 +41,7 @@ public class ColorPair {
 		return major.getIndex() * ColorName.MINOR_COUNT + minor.getIndex() + 1;
 	}
 
-	public static IColor fromIndex(Object[] values, int index) {
-		for (Object obj : values) {
-			IColor color = (IColor) obj;
-			if (color.getIndex() == index) {
-				return color;
-			}
-		}
-		return null;
+	public static Object fromIndex(Object[] values, int index) {
+		return values[index];
 	}
 };

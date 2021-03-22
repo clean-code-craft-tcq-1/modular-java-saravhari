@@ -1,6 +1,6 @@
 package colorcoder.type;
 
-public enum MajorColor implements IColor {
+public enum MajorColor {
 	WHITE(0), RED(1), BLACK(2), YELLOW(3), VIOLET(4);
 
 	private int index;
@@ -9,7 +9,6 @@ public enum MajorColor implements IColor {
 		this.index = index;
 	}
 
-	@Override
 	public int getIndex() {
 		return index;
 	}
